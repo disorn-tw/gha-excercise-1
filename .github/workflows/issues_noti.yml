@@ -1,0 +1,10 @@
+name: New Issue Notification
+on: 
+    issues:
+        types: opened
+jobs:
+    log-issue:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Log issue name
+              run: echo "Nothing for now.."
