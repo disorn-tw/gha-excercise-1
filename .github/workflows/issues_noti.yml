@@ -7,4 +7,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Log issue name
-              run: echo "Nothing for now.."
+              run: echo "Event detail ${{toJson(github.event)}}"
